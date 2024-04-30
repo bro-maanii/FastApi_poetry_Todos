@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fastapi-poetry-todos"
+version = "0.1.0"
+description = ""
+authors = ["Eman Ali Abbasi <113726637+maani31@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+uvicorn = {extras = ["standard"], version = "^0.29.0"}
+requests = "^2.31.0"
+pydantic = "^2.7.1"
+python-dotenv = "^1.0.1"
+sqlalchemy = "^2.0.29"
+psycopg2 = "^2.9.9"
+fastapi = "^0.110.2"
+pytest = "^8.2.0"
+httpx = "^0.27.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
