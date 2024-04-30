@@ -1,11 +1,9 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-import os
-from dotenv import load_dotenv
-load_dotenv()
 
-SQLALCHEMY_DATABASE_URL = os.environ.get('DATABASE_KEY')
+
+SQLALCHEMY_DATABASE_URL = "postgresql://alie15425:WgFoO1ylnI7d@ep-noisy-bread-a15xrk5r.ap-southeast-1.aws.neon.tech/FastApi_Todo?sslmode=require"
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, connect_args={}
 )
